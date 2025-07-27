@@ -2,11 +2,7 @@
 
 ![20250727_1151_Logo MecMain IA_simple_compose_01k16cmpx0f7ya0z4acfdk9mh7.png](de0919fb-668c-442d-80fc-a45394648c72.png)
 
-# ** MecMain IA | StartUp**
-
-                     La evolución del mantenimiento inteligente
-
----
+# MecMain IA | StartUp
 
 **Concepto de MecMain**
 
@@ -45,7 +41,3 @@
 - Formaciones técnicas SENA / institutos
 
 ---
-
-                                                                                                                           **Jhon Alejandro Díaz J.**
-
-                                                                                                        CEO y Fundador – **MecMain IA**                                                                                  *"*La evolución del mantenimiento inteligente.*"*
