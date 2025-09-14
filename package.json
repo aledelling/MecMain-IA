@@ -1,0 +1,25 @@
+{
+  "name": "mecmain-ia",
+  "version": "1.0.0",
+  "description": "![20250727_1151_Logo MecMain IA_simple_compose_01k16cmpx0f7ya0z4acfdk9mh7.png](de0919fb-668c-442d-80fc-a45394648c72.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aledelling/MecMain-IA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aledelling/MecMain-IA/issues"
+  },
+  "homepage": "https://github.com/aledelling/MecMain-IA#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}

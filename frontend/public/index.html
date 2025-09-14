@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+import Header from "../components/Header";
+
+export default function Home() {
+  return (
+    <div className="container">
+      <Header />
+      <main>
+        <section className="hero hero-flex" id="inicio">
+          <div className="hero-content">
+            <span className="kicker">Startup • IA • Mantenimiento</span>
+            <h1>
+              La evolución del <span style={{ color: "var(--brand)" }}>mantenimiento</span> inteligente
+            </h1>
+            <p className="lead">
+              Transformamos el mantenimiento mecánico en Colombia y Latinoamérica con inteligencia artificial: entrenamiento autónomo, optimización predictiva y una plataforma intuitiva para talleres e industrias.
+            </p>
+            <div className="cta">
+              <a className="btn" href="#contacto">Hablar con ventas</a>
+              <a className="btn secondary" href="#concepto">Ver concepto</a>
+            </div>
+            <p className="small">
+              Paper 001 • 27 de julio de 2025 • <a href="mailto:aledelling@gmail.com">aledelling@gmail.com</a>
+            </p>
+          </div>
+          <div className="hero-agent">
+            <img src="img/MainAgent.png" alt="MecMain Agent" />
+          </div>
+        </section>
+
+        <section id="concepto">
+          <h2>¿Qué es MecMain?</h2>
+          <div className="grid">
+            <div className="card">
+              <h3>Innovación en mantenimiento</h3>
+              <p>MecMain IA automatiza el entrenamiento técnico y optimiza el diagnóstico, prevención y ejecución de mantenimientos en múltiples industrias usando inteligencia artificial.</p>
+            </div>
+            <div className="card">
+              <h3>Origen del nombre</h3>
+              <p>“Mec” de mecánica + “Main” de mantenimiento y main en inglés, sugiriendo centralidad y enfoque principal.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="valor">
+          <h2>Propuesta de valor</h2>
+          <div className="grid">
+            <div className="card">
+              <h3>Entrenamiento autónomo</h3>
+              <p>IA que personaliza y automatiza la capacitación del personal técnico.</p>
+            </div>
+            <div className="card">
+              <h3>Optimización predictiva</h3>
+              <p>Modelos para anticipar fallas y programar mantenimientos preventivos.</p>
+            </div>
+            <div className="card">
+              <h3>Escalabilidad multisectorial</h3>
+              <p>Soluciones adaptables a talleres, industria y formación técnica.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="colombia">
+          <h2>Enfoque en Colombia</h2>
+          <div className="card">
+            <p>Diseñada para apoyar talleres pequeños y medianos en su digitalización, empoderando a técnicos colombianos con herramientas de nivel mundial.</p>
+          </div>
+        </section>
+
+        <section id="aplicaciones">
+          <h2>Aplicaciones</h2>
+          <div className="grid">
+            <div className="card">
+              <h3>Talleres automotrices</h3>
+              <p>Gestión integral de órdenes, repuestos y comunicación con clientes.</p>
+            </div>
+            <div className="card">
+              <h3>Mantenimiento industrial</h3>
+              <p>Planificación de paradas, sensores y alertas de condición.</p>
+            </div>
+            <div className="card">
+              <h3>Formación técnica</h3>
+              <p>Alianzas con SENA e institutos para capacitación acelerada basada en IA.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto">
+          <h2>Contacto</h2>
+          <div className="card">
+            <p><strong>Email:</strong> <a href="mailto:aledelling@gmail.com">aledelling@gmail.com</a></p>
+            <p><strong>CEO y Fundador:</strong> Jhon Alejandro Díaz J.</p>
+            <p className="small">MecMain IA — “La evolución del mantenimiento inteligente.”</p>
+          </div>
+        </section>
+      </main>
+      <footer className="footer">
+        <div>© 2025 MecMain IA. Todos los derechos reservados.</div>
+        <div className="small">Hecho con estándares web y accesibilidad en mente.</div>
+      </footer>
+    </div>
+  );
+}
