@@ -1,25 +1,53 @@
 {
-  "name": "mecmain-ia",
+  "name": "@mecmain/workspace",
   "version": "1.0.0",
-  "description": "![20250727_1151_Logo MecMain IA_simple_compose_01k16cmpx0f7ya0z4acfdk9mh7.png](de0919fb-668c-442d-80fc-a45394648c72.png)",
-  "main": "index.js",
+  "description": "MecMain IA - Plataforma de mantenimiento inteligente con IA",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:reset": "supabase db reset",
+    "supabase:status": "supabase status",
+    "supabase:gen-types": "supabase gen types typescript --local > packages/supabase/types.ts"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.12",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "supabase": "^1.123.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aledelling/MecMain-IA.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aledelling/MecMain-IA/issues"
-  },
-  "homepage": "https://github.com/aledelling/MecMain-IA#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0"
-  }
+  "keywords": [
+    "maintenance",
+    "ai",
+    "colombia",
+    "startup",
+    "mechanical",
+    "predictive",
+    "supabase"
+  ],
+  "author": "Jhon Alejandro Díaz J. <aledelling@gmail.com>",
+  "license": "MIT"
 }
